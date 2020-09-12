@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sign up</title>
+        <link rel="icon" href="achy.png" type="image/png">
+        <style>
+             ul {
+           position:absolute;
+           top:25px;
+           width: 100%;
+        list-style-type: none;
+        margin-left: 25px;
+        padding: 0;
+        overflow: hidden;}
+      
+      
+      li {
+        float: left;}
+      
+      
+      li a {
+        display: block;
+        color:white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration:underline;
+        text-decoration-style: double;}
+      
+      
+      li a:hover {font-weight: bold;
+        border-radius: 10px;
+        background-color: #111;
+        color: white;}
+      
+            
+      .color{background-image: url(neck1.jpg);
+                   background-attachment: fixed;
+                   background-position: center;
+                   background-size: cover;}
+            .labal{color: black;}
+            .back a{text-align:end;
+                  font-size:20px;
+                  color: black;
+                  margin-left: 900px;
+                    padding: 14px 16px;
+                    text-decoration:underline;
+                    display:block;
+                  }
+            .back a:hover{color: white;
+                          border-radius: 10px;
+                          font-weight: bold;
+                          background-color: #111;}
+
+            
+            
+            
+        </style>
+    </head>
+    <body class="color">
+        <ul>
+          <li><a  href="index.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+           <li><a href="login.html">LOGIN</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+
+
+        </ul>
+
+    
+    
+        <form name="register" id="Registration" method="POST" action="d.txt" onsubmit="return(validate());">
+            
+            <table style="border-style:hidden;
+                          margin-left: 25px;
+                          padding: 25px;
+                          border-radius: 25px;
+                          background-color:rgb(165, 170, 170);
+                          backface-visibility: visible;
+                          margin-top: 130px;">
+                <tr>
+                    <td colspan="2">
+                        <h1 style="color: black;">Register Here</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labal">Enter your name:</td>
+                    <td>
+                        <input style="border-radius: 8px;" type="text" placeholder="check" name="name" id="first name" value=" " size="30" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labal">Enter email:*</td>
+                    <td>
+                        <input style="border-radius: 8px;" type="email" placeholder="check" name="email" id="email" value=" " required />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labal">Enter password:*</td>
+                    <td>
+                        <input style="border-radius: 8px;" type="password" placeholder="check" name="p1" id="Initial_password" value=" " required />
+                    </td> 
+                </tr>
+                <tr>
+                    <td class="labal">Confirm password:*</td>
+                    <td>
+                    <input style="border-radius: 8px;" type="password" placeholder="check" name="p2" id="Confirm_password" value=" " required />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labal">Date of birth:*</td>
+                    <td>
+                        <input style="border-radius: 8px;" type="date" name="date" id="date" value="mm/dd/yyyy" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labal">Address:</td>
+                    <td>
+                        <textarea style="border-radius: 8px;" name="Address" id="add" cols="25" rows="5" value=" " required ></textarea>
+                    </td>
+                </tr>
+                
+              
+                <tr>
+                    <td class="labal">Contact No:</td>
+                    <td>
+                        <input style="border-radius: 8px;" type="tel" name="number" id="no" value=" " required />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labal">Gender:</td>
+                    <td class="labal">
+                        <input type="radio" name="Gender" id="Gender" value="m" required />Male
+                        <input type="radio" name="Gender" id="Gender" value="f" required />Female
+                    </td>
+                </tr>
+                
+                    
+                <tr>
+                    <td colspan="2">
+                        <input style="border-radius: 8px;" type="reset" name="reset" id="reset" value="Reset" />
+                    
+            
+                        <input style="border-radius: 8px;" type="submit" name="submit" id="submit" value="SUBMIT" />
+                    </td>
+                </tr>
+            </table>
+            
+        </form>
+        <div class="back"><a href="index.html"> Back</a></div>
+    </body>
+</html>
+
+
